@@ -1,0 +1,10 @@
+name: test
+main: me.jason.test.Test
+author: jason szot
+description: a test plugin
+version: 1.0
+
+commands:
+  test:
+    usage: /<command>
+    description: a test command
