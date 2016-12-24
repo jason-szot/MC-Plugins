@@ -1,4 +1,4 @@
-package me.jason.tamplate;
+package me.jason.template;
 
 import org.bukkit.Bukkit;
 import org.bukkit.command.Command;
@@ -22,3 +22,10 @@ public class Template extends JavaPlugin{
 	}
 
 }
+
+/*
+ *	tutorial on YouTube 
+ * 	youtube.com/watch?v=
+ *  youtube.com/user/PogoStick29Dev
+ * 	
+ */
