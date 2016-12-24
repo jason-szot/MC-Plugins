@@ -1,0 +1,13 @@
+name: 
+version: 1.0
+main: me.jason.template.Template
+author: jason szot
+description: simple template for plugins
+
+commands:
+  command1:
+    usage: /<command>
+    description: what it does
+  command2:
+    usage: /<command>
+    description: what this does

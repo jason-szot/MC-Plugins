@@ -1,0 +1,13 @@
+name: prank
+version: 1.0
+main: me.jason.prank.Prank
+author: jason szot
+description: simple prank plugin
+
+commands:
+  fakeop:
+    usage: /<command>
+    description: fake op
+  fakejoin:
+    usage: /<command>
+    description: fake join

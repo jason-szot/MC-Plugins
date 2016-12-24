@@ -22,7 +22,7 @@ public class Medic extends JavaPlugin{
 	@SuppressWarnings("deprecation")
 	public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args){
 		if (!(sender instanceof Player)){	// console sent command
-			sender.sendMessage(ChatColor.RED + "The medic command is for players only");
+			sender.sendMessage(ChatColor.RED + "The medic plugin is for players only");
 			return true;
 		}
 		Player player = (Player) sender;
