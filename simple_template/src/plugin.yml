@@ -11,3 +11,4 @@ commands:
   command2:
     usage: /<command>
     description: what this does
+   

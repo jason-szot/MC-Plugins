@@ -8,11 +8,11 @@ import org.bukkit.plugin.java.JavaPlugin;
 public class Template extends JavaPlugin{
 	
 	public void onEnable(){
-		Bukkit.getServer().getLogger().info("<name> v" + this.getDescription().getVersion() + " enabled.");
+		Bukkit.getServer().getLogger().info("name v" + this.getDescription().getVersion() + " enabled.");
 	}
 	
 	public void onDisable(){
-		Bukkit.getServer().getLogger().info("<name> v" + this.getDescription().getVersion() + " disabled.");
+		Bukkit.getServer().getLogger().info("name v" + this.getDescription().getVersion() + " disabled.");
 	}
 	
 	public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args){
