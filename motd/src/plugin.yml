@@ -1,8 +1,8 @@
 name: MOTD
-version: 2.0
+version: 3.0
 main: me.jason.motd.Motd
 author: jason szot
-description: a more advanced message of the day
+description: an even more advanced message of the day with permissions
 
 commands:
   motd:
@@ -11,3 +11,8 @@ commands:
   setmotd:
     usage: /<command>
     description: sets the MOTD
+    
+permissions:
+  motd.set:
+    description: use the setmotd command to change the MOTD
+    default: op

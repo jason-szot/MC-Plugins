@@ -31,14 +31,22 @@ public class Motd extends JavaPlugin implements Listener{
 		}
 		
 		if(cmd.getName().equalsIgnoreCase("setmotd")){
+			if(!sender.hasPermission("motd.set")){
+				sender.sendMessage(ChatColor.RED + "You do not have permission to use this command");
+				return true;
+			}
+			
 			if(args.length == 0){
 				sender.sendMessage(ChatColor.RED + "Please provide a message of the day");
 				return true;
 			}
+			
 			StringBuilder str = new StringBuilder();
+			
 			for(int i = 0; i < args.length; i++){
 				str.append(args[i] + " ");
 			}
+			
 			String motd = str.toString();
 			getConfig().set("message",  motd);
 			saveConfig();
@@ -59,8 +67,9 @@ public class Motd extends JavaPlugin implements Listener{
 
 /*
  *	tutorial on YouTube 
- * 	youtube.com/watch?v=HlrMN06wW7U - part 1
- *  youtube.com/watch?v=SBvrpmNDr74 - part 2
+ * 	youtube.com/watch?v=HlrMN06wW7U - part 1 - motd
+ *  youtube.com/watch?v=SBvrpmNDr74 - part 2 - configuration files
+ *  youtube.com/watch?v=4cMjHMQhvaU - part 3 - permissions
  *  youtube.com/user/PogoStick29Dev
  * 	
  */
