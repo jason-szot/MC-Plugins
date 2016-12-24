@@ -39,9 +39,8 @@ public class Test extends JavaPlugin{
 }
 
 /*
- *	tutorial on youtube 
+ *	tutorial on YouTube 
  * 	youtube.com/watch?v=bVySbfryiMM
- * 
+ *  youtube.com/user/PogoStick29Dev
  * 	
- * 
  */

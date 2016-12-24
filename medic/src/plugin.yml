@@ -1,0 +1,15 @@
+name: Medic
+main: me.jason.medic.Medic
+version: 1.0
+author: jason szot
+description: a medic plugin to heal and feed
+
+commands:
+  heal:
+    usage: /<command>
+    aliases: [health, givehealth]
+    description: heal a player
+  feed:
+    usage: /<command>
+    aliases: [food]
+    description: feed a player
