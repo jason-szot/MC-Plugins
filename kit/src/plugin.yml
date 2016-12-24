@@ -1,0 +1,15 @@
+name: kit
+version: 1.0
+main: me.jason.kit.Kit
+author: jason szot
+description: a very simple kit plugin
+
+commands:
+  kit:
+    usage: /<command>
+    aliases: [getkit]
+    description: gives some items
+  ci:
+    usage: /<command>
+    aliases: [clearinventory, clearinv]
+    description: clears player inventory
