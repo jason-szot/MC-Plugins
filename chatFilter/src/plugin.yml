@@ -1,0 +1,5 @@
+name: ChatFilter
+version: 1.0
+main: me.jason.chatfilter.ChatFilter
+author: jason szot
+description: simple chat filter plugin
