@@ -1,0 +1,15 @@
+name: freeze
+version: 1.0
+main: me.jason.freeze.Freeze
+author: jason szot
+description: simple freeze plugin
+
+commands:
+  freeze:
+    usage: /<command>
+    description: freezes a player
+    
+permissions:
+  freeze.use:
+    description: use the setmotd command to change the MOTD
+    default: op
