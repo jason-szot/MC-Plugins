@@ -3,6 +3,7 @@ version: 1.0
 main: me.jason.kit.Kit
 author: jason szot
 description: a very simple kit plugin
+depend: [Vault]
 
 commands:
   kit:
