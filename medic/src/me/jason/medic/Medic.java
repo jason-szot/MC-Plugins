@@ -12,11 +12,12 @@ public class Medic extends JavaPlugin{
 
 	// heal or feed a player
 	public void onEnable(){
-		
+		Bukkit.getServer().getPluginManager().registerEvents(new MedicListener(), this);
+		Bukkit.getServer().getLogger().info("Medic enabled!");
 	}
 	
 	public void onDisable(){
-		
+		Bukkit.getServer().getLogger().info("Medic disabled!");
 	}
 	
 	@SuppressWarnings("deprecation")
