@@ -1,0 +1,5 @@
+name: Announcer
+version: 1.0
+main: me.jason.announcer.Announcer
+author: jason szot
+description: simple announcements
