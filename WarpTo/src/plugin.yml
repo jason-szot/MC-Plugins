@@ -1,0 +1,17 @@
+name: WarpTo
+version: 1.0
+main: com.daemonresolve.mc.WarpTo
+author: jason szot
+description: simple teleport plugin
+
+commands:
+  warp:
+    usage: /<command> warp name
+    aliases: [tp, go]
+    description: teleports to a saved warp
+  setwarp:
+    usage: /<command> warp name
+    description: sets the warp point
+  listwarps:
+    usage: /<command>
+    description: lists available warps
