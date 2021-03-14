@@ -1,14 +1,16 @@
 package com.daemonresolve.mc;
 
+
+
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.Location;
 import org.bukkit.World;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
+import org.bukkit.configuration.ConfigurationSection;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.entity.Player;
-import org.bukkit.configuration.*;
 
 
 public class WarpTo extends JavaPlugin{
@@ -76,9 +78,9 @@ public class WarpTo extends JavaPlugin{
 					sender.sendMessage(ChatColor.AQUA + "No warps currently available");
 					return true;
 				}
-				ConfigurationSection warps = (ConfigurationSection) getConfig().getKeys(false);
-				warps.getString("warp." + name);
-				sender.sendMessage((ChatColor.AQUA + "Available Warps: " + String.join(", ", (CharSequence) warps)));
+				ConfigurationSection warps =  getConfig().getConfigurationSection("warp." + name);
+				warps.getKeys(false);
+				sender.sendMessage(ChatColor.AQUA + "Current Warps: " + warps.getKeys(false).toString()); // kind of hacky, but it works
 				return true;
 			}
 			
